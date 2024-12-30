@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Generator ponad 100  startowych sytuacji "in media res" do improwizowanych sesji w konwencji fantasy. </title>
+    <style>
+        body {
+            background-image: url(https://media.discordapp.net/attachments/1293933901055529072/1293933901240336394/d01fbb58-5925-488c-827e-9ebb714400c7.jpg?ex=6773f6da&is=6772a55a&hm=91c6950189579a2aa43d144427acc6963228c2ddfb4e7f4bbc5934d55830c730&=&format=webp&width=621&height=621); /* Zamień 'sciezka/do/obrazka.jpg' na właściwą ścieżkę do Twojego obrazka */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: blue;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        #result {
+            font-size: 20px;
+            margin-top: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista 100  startowych sytuacji "in media res" do improwizowanych sesji w konwencji fantasy.
+
+Autorzy:
+Angelo, Elan, halliday, kamilQ, KHZP (Kubek), Lanwook, Makaron, Mączimer, MiniNorbercik, Senator, Wafergix, 
+</h1>
+    <button onclick="drawItem()">Wylosuj</button>
+    <p id="result"></p>
+
+    <script>
+        const list = ["1.	Pędzicie kopalnianym wagonikiem. Hamulce nie działają, a w oddali dostrzegacie, że tory urywają się nad bezdenną przepaścią. Co robicie?",
+"2.	Któreś z was stwierdziło, że uwodzenie smoków się przejadło, a walka na pierwszym poziomie jest zbyt niebezpieczna. Okay. Możecie mi jednak wyjaśnić, co wami kierowało podczas wpuszczania rebelii goblinów na królewski bankiet i co zamierzacie w związku z tym zrobić? KHZP ( Kubek)", 
+"3.	Przed wami miejsce gdzie powinien być most przez który chcieliście uciec na drugą stronę wąwozu, zabrały go wody potoku . Po obu stronach są skaliste zbocza, a za wami pogoń.",
+"4.	 Wasz Woźnica oraz konie ciągnące wóz na którym siedzicie wciągnęło coś żyjącego w bagnie. Bagnie w które zapada się wóz.",
+"5.	Poproszenie o audiencję króla Szczurów wydawało się dobrym pomysłem. Jednak z jakiegoś powodu skończyło się na byciu otoczony przez jego uzbrojonych w kusze podwładnych.",
+"6.	 Syreni śpiew przestał na was w końcu działać, gdy połknął was Lewiatan. Co robicie?",
+"7.	Zamknięte drzwi, dym, gorąc i  złowrogo skandowanie na zewnątrz. Dlaczego tak skończyła się wasza wizyta w wieży strażniczej.",
+"8.	Na jarmarku w dzień handlowy z wystawionych towarów powstają brutalne golemy. Straż miejska już wie że to wasza wina.",
+"9.	Nikt wam nie wierzy że ten dzień będzie ostatecznym jeśli nie złożycie w ofierze żywego symbolu tego miasta. Aly wy wiecie że to prawda.",
+"10.	 Wymieniliście się nie zaproszeni na bal maskowy który okazuje się spotkaniem mrocznego kultu. Ktoś z obecnych poprosił was o poprowadzenie ceremonii.",
+
+        ];
+
+        function drawItem() {
+            const randomIndex = Math.floor(Math.random() * list.length);
+            document.getElementById("result").innerText = list[randomIndex];
+        }
+    </script>
+</body>
+</html>
